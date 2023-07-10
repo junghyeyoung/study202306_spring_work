@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.two{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		height: 20vh;
+		background: url(${pageContext.request.contextPath}/resources/images/planet-g027145edf_1920.jpg) no-repeat;
+		background-size: cover;
+	}
+body::before{
+	content: "";
+	position: absolute; z-index: 1;
+	top: 0; right: 0; bottom: 0; left:0;
+	background-color: rgba(0,0,0,.7);
+}
